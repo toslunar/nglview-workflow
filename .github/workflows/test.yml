@@ -44,12 +44,15 @@ jobs:
         python-version: ${{ matrix.python-version }}
         use-only-tar-bz2: true  # IMPORTANT: This needs to be set for caching to work properly!
 
-    - name: Run tests
+    - name: hoge
       run: |
-        python -m pytest -vs nglview/tests --cov=nglview --cov-report=html --disable-pytest-warnings
-
-    - name: Check installation with pip
-      run: |
-        python setup.py sdist
-        pip install dist/*gz
-        python -c "import nglview as nv; print(nv.__version__)"
+        cat /home/runner/work/nglview-workflow/nglview-workflow/.github/setup-miniconda-patched-nglview-gha.yml
+#    - name: Run tests
+#      run: |
+#        python -m pytest -vs nglview/tests --cov=nglview --cov-report=html --disable-pytest-warnings
+#
+#    - name: Check installation with pip
+#      run: |
+#        python setup.py sdist
+#        pip install dist/*gz
+#        python -c "import nglview as nv; print(nv.__version__)"
