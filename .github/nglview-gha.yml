@@ -1,0 +1,39 @@
+name: nglview-gha
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python>=3.6
+  - pip
+  - jupyter-packaging
+  - qcelemental
+  - traitlets
+  - ipywidgets
+  - comm  # see https://github.com/jupyter-widgets/ipywidgets/issues/3729
+  - mock
+  - coverage
+  - nose
+  - pytest
+  - pytest-cov
+  - coveralls
+  - pandas
+  - ase
+  - biopython
+  - pymatgen
+  - simpletraj
+  - matplotlib
+  - moviepy
+  - imageio
+  - pillow
+  - numpy
+  - pandas
+  - ase
+  - biopython
+  - pymatgen
+  - simpletraj
+  - rdkit
+  - mdanalysis
+  - mdtraj
+  - parmed
+  - ambertools
