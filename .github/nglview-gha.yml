@@ -9,7 +9,7 @@ dependencies:
   - jupyter-packaging
   - qcelemental
   - traitlets
-  - ipywidgets
+  - ipywidgets>=8.0.5
   - comm  # see https://github.com/jupyter-widgets/ipywidgets/issues/3729
   - mock
   - coverage
