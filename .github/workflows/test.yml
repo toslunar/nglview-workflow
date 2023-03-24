@@ -46,7 +46,8 @@ jobs:
 
     - name: hoge
       run: |
-        cat /home/runner/work/nglview-workflow/nglview-workflow/.github/setup-miniconda-patched-nglview-gha.yml
+        # cat /home/runner/work/nglview-workflow/nglview-workflow/.github/setup-miniconda-patched-nglview-gha.yml
+        conda env export
 #    - name: Run tests
 #      run: |
 #        python -m pytest -vs nglview/tests --cov=nglview --cov-report=html --disable-pytest-warnings
